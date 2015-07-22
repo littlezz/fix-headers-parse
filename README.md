@@ -8,8 +8,12 @@ decode as 'latin1' by client, which will contain some special character, for exa
 The terrible thing is, in python3, `email.feedparser.BufferedSubFile` split data by `str.splitlines`, which would
 split on the  `\x85`. (https://docs.python.org/3.5/library/stdtypes.html#str.splitlines)
 
+I had posted a issue to describe about this bug (https://github.com/kennethreitz/requests/issues/2683#issue-96283765)
+
 This module try to use monkey patch to replace the behave of `push` method in
-the `email.feedparser.BufferedSubFile` to avoid headers split by `\x85`
+the `email.feedparser.BufferedSubFile` to avoid headers split by `\x85` (fix_splitlines)
+
+And use utf8 to decode the headers (fix_encoding)
 
 
 
