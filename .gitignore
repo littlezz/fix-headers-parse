@@ -1,2 +1,7 @@
 *.py[cd]
 .idea/
+dist/
+build/
+*.egg-info/
+MANIFEST
+.DS_Store
