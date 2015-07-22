@@ -42,4 +42,5 @@ def push(self, data):
     self.pushlines(parts)
 
 
-BufferedSubFile.push = push
+def make_fix_splitlines():
+    BufferedSubFile.push = push
