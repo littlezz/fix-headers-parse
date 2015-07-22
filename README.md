@@ -8,6 +8,15 @@ the `email.feedparser.BufferedSubFile` to avoid headers split by `\x85` (fix_spl
 And use utf8 to decode the headers (fix_encoding)
 
 
+Install
+------------
+You need pip to install this library.
+
+```
+pip3 install git+https://github.com/littlezz/fix-headers-parse
+```
+
+
 
 Quick Start
 ---------------
