@@ -15,8 +15,23 @@ the `email.feedparser.BufferedSubFile` to avoid headers split by `\x85`
 
 Quick Start
 ---------------
+fix splitlines and encoding
 
-```python3
-import fix_headers_parse
+```python
+from fix_headers_parse make_headers_fix
+
+make_headers_fix()
 
 ```
+
+or just explicit fix 'splitlines'
+
+```python
+make_headers_fix('fix_splitlines')
+```
+
+here is list of fix:
+
+- fix_splitlines
+- fix_encoding
+
