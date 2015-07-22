@@ -1,8 +1,5 @@
 __author__ = 'zz'
 
-# from .fix_encoding import make_fix_encoding
-# from .fix_splitlines import make_fix_splitlines
-
 
 _all_fix = ('fix_encoding', 'fix_splitlines')
 
@@ -20,8 +17,3 @@ def make_headers_fix(fix_names=None):
 
     for name in fix_names:
         locals()[_redirect_name(name)]()
-
-
-
-
-
